@@ -1,0 +1,18 @@
+---
+name: Smarta1
+description: Smarta Apps template
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: smarta-dev-server_with-ruby
+  source: smarta-dev-server:with-ruby
+  category: Server Tier
+  type: Default
+  ports:
+  - host_port: '8080'
+    container_port: '80'
+    proto: TCP
+  volumes:
+  - host_path: "/home/core/www/test1"
+    container_path: "/home/pigeon/src/app/public"
